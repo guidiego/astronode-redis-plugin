@@ -1,0 +1,39 @@
+{
+  "name": "astronode-redis-plugin",
+  "version": "0.1.0",
+  "description": "Astronode plugin to work with redis",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config config.jest.json --coverage",
+    "test:dev": "jest --config config.jest.json --watch",
+    "lint": "eslint --config .eslintrc lib",
+    "lint:fix": "eslint --config .eslintrc lib --fix",
+    "coveralls": "cat coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monumentum/astronode-redis-plugin.git"
+  },
+  "keywords": [
+    "redis",
+    "cache",
+    "astronode",
+    "plugin",
+    "astrostack",
+    "es6"
+  ],
+  "author": "Guilherme Diego <guilherme@monumentum.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monumentum/astronode-redis-plugin/issues"
+  },
+  "homepage": "https://github.com/monumentum/astronode-redis-plugin#readme",
+  "dependencies": {
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4"
+  }
+}
